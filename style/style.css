@@ -10,9 +10,8 @@
 :root{
     --text-color: #eaf4f7;
     --background-color: #100b06;
-    --primary-color: #ff7600;
-    --secondary-color: #ad7d53;
-    --accent-color: #e3904a;
+    --primary-color: #ff0000;
+    --accent-color: #e34a4a;
 }
 
 body{
