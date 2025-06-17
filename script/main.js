@@ -34,12 +34,12 @@ const listCont = document.getElementById('mail-container');
 const listEl = document.createElement('ul');
 
 for (let i = 0; i < emails.length; i++) {
-    let mail = emails[i];
-    console.log(mail);
+    let singleMail = emails[i];
+    console.log(singleMail);
     
     const listItem = document.createElement('li');
     
-    listItem.textContent = mail;
+    listItem.innerHTML = `<li>${singleMail}</li>`;
     listEl.appendChild(listItem);
 }
 
