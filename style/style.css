@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "JetBrains Mono", monospace;
+    color: var(--text-color);
+}
+
+:root{
+    --text-color: #eaf4f7;
+    --background-color: #100b06;
+    --primary-color: #ff7600;
+    --secondary-color: #ad7d53;
+    --accent-color: #e3904a;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20% auto;
+}
+
+.generatore{
+    border-radius: 5px;
+    border: 3px solid var(--primary-color);
+    font-size: 3rem;
+    padding: 20px 30px;
+    margin-top: 100px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transition: 0.2s;
+
+    &:hover{
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        box-shadow: 0 0 13px var(--accent-color);
+    }
+
+    &:active{
+        background-color: var(--accent-color);
+        color: var(--background-color);
+        border: 3px solid var(--background-color); 
+        box-shadow: none;
+    }
+}
+
+.email-list{
+    margin: -100px auto 0 auto;
+    text-align: center;
+    & li{
+        margin: 10px;
+    }
+}
+
+.retry{
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.riprova{
+    font-size: 4rem;
+    padding: 15px 20px;
+}
